@@ -1,0 +1,100 @@
+[
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/dashboard",
+    "response_shape": {
+      "recent_contacts": "array",
+      "tasks_due_today": "int",
+      "total_contacts": "int",
+      "total_tasks": "int",
+      "upcoming_tasks": "array"
+    },
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/contacts",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/contacts/:id",
+    "response_shape": {
+      "company": "string",
+      "created_at": "datetime",
+      "email": "string",
+      "first_name": "string",
+      "id": 1,
+      "last_name": "string",
+      "notes": "string",
+      "phone": "string",
+      "updated_at": "datetime"
+    },
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/contacts/:id/activities",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/tasks",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/tasks/:id",
+    "response_shape": {
+      "contact_id": 1,
+      "created_at": "datetime",
+      "description": "string",
+      "due_date": "datetime",
+      "id": 1,
+      "priority": "string",
+      "status": "string",
+      "title": "string",
+      "updated_at": "datetime"
+    },
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/health",
+    "request_body": null,
+    "response_shape": {
+      "status": "string"
+    },
+    "sample_body": null,
+    "sample_params": null,
+    "success_status": 200
+  }
+]
