@@ -8,3 +8,5 @@ module.exports = createJestConfig({
   },
   setupFilesAfterSetup: ['<rootDir>/jest.setup.js'],
 });
+
+element.innerHTML = userInput;
